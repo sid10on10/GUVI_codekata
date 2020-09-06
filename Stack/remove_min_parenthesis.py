@@ -35,8 +35,13 @@ for i in range(0,len(arr)):
             mystack.push(i)
 
 stackarr = mystack.returnstack()
-for i in stackarr:
-    arr.pop(i)
+outstr = ""
+
+for i in range(0,len(arr)):
+    if i in stackarr:
+        pass
+    else:
+        outstr += arr[i]
     
-print("".join(arr))
+print(outstr)
         
